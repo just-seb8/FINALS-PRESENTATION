@@ -1,0 +1,180 @@
+.form{
+    width: 250px;
+    height: 380px;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%);
+    position: absolute;
+    top: 20px;
+    left: 870px;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.form h2{
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: hotpink;
+    font-size: 22px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+}
+
+.form input{
+    width: 240px;
+    height: 35px;
+    background-color: transparent;
+    border-bottom: 1px solid hotpink;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+
+.form input:focus{
+    outline: none;
+}
+
+::placeholder{
+    color: #fff;
+    font-family: Arial;
+}
+
+.btnn{
+    width: 240px;
+    height: 40px;
+    background: hotpink;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4 ease;
+}
+
+.btnn:hover{
+    background: #fff;
+    color: hotpink;
+}
+
+.btnn a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.form .link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.form .link a{
+    text-decoration: none;
+    color: #ff69b4;
+}
+
+.liw{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.form {
+    position: relative;
+    left: 0;
+    margin: 20px auto;
+}
+
+
+
+.form {
+    width: 90%; 
+}
+
+.form input,
+.btnn {
+    width: 100%; 
+}
+
+
+
+
+
+
+
+
+            .search {
+                width: 330px;
+                float: right;
+                margin-top: 18px; 
+                margin-right: 10px;
+                display: flex; 
+                align-items: center;                
+            }
+            
+            .srch {
+                font-family: 'Times New Roman';
+                width: 200px;
+                height: 40px;
+                background: transparent;
+                border: 1px solid hotpink;
+                color: #fff;
+                border-right: none;
+                font-size: 16px;
+                padding: 10px;
+                border-bottom-left-radius: 5px;
+                border-top-left-radius: 5px;
+                box-sizing: border-box; 
+                transition: background-color 0.3s, border-color 0.3s;
+            }
+            
+            .btn {
+                width: 100px;
+                height: 40px;
+                background: hotpink;
+                border: 2px solid hotpink;
+                color: #fff;
+                font-size: 15px;
+                border-bottom-right-radius: 5px;
+                border-top-right-radius: 5px;
+                cursor: pointer;
+                box-sizing: border-box;
+                transition: background-color 0.3s, transform 0.2s;
+            }
+            
+            .btn:hover {
+                background-color: #ff69b4;
+                transform: scale(1.1);
+            }
+            
+            .btn:focus,
+            .srch:focus {
+                outline: none;
+            }

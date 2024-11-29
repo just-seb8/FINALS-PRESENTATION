@@ -1,0 +1,430 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(4.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 180vh;
+    background-attachment: AUTO;
+}
+
+.navbar{
+    width: 1200px;
+    height:  100px;
+    margin: auto;
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo{
+    color: #b48811;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-size: 70px;
+}
+
+.menu   {
+    margin-left: 110px;
+    height: 70px;
+}
+
+
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    margin-left: 100px;
+    margin-top: 26px;
+    font-size: 20px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: "Lexend", sans-serif;
+    transition: 0.3s ease-in-out;
+}
+
+ul li a:hover{
+    color:#b48811;
+}
+
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: #fff;
+    position: relative;
+    margin-top: 100px;
+
+}
+
+.content .par{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+.content .h1{
+    font-family: 'Times New Roman';
+    font-size: 90px;
+    padding-left: 20px;
+    margin-top: 20%;
+    letter-spacing: 2px;
+}
+
+.content .cn{
+    width: 160px;
+    height:  40px;
+    background: #b48811;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+
+}
+
+.content.cn a{
+    text-decoration: none;
+    color: black;
+    transition: .3 ease;
+}
+
+.cn:hover{
+    background-color:#b48811;
+    font-weight: bold;
+}
+
+.content span{
+    color:#b48811;
+    font-size: 65px;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+    top: -10px;
+    width: 100%;
+}
+
+.icon a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+}
+
+.icon ion-icon {
+    color: #fff;
+    font-size: 31px;
+    padding-left: 17px;
+    padding-top: 5px;
+    transition: color 0.3s ease;
+}
+
+.icon ion-icon:hover {
+    color: #b48811;
+}
+.form-image-container {
+    display: flex; /* Set container to Flexbox */
+    align-items: flex-start; /* Align form and image at the top */
+    gap: 20px; /* Space between form and image */
+    max-width: 1000px; /* Optional: Limit max width */
+    margin: 0 auto; /* Center container */          /* Space between form and image */
+}
+
+.form-container {
+    background: transparent;
+    padding: 40px;
+    border-radius: 10px;
+    color: white;
+    width: 350px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    flex: 1; /* Form takes up available space */
+    max-width: 600px; 
+}
+.image-container {
+    flex: 1; /* Image container takes up available space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:  30%;   
+    height: 400px;
+    width: 290px;
+    margin-left: 100px;
+}
+
+.image-container img {
+    max-width: 250%; /* Ensure image is responsive */
+    max-height: 200px; /* Set a max height for the image */
+    display: none; 
+    margin-left: 70px;/* Initially hide the image */         /* Initially hidden */
+}
+form h2 {
+    color: #f8c8d8; /* Soft pink */
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 14px;
+    color: #f0f0f0;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    color: #333;
+    font-size: 14px;
+}
+
+input:focus, select:focus {
+    border-color: #b48811; /* Pink focus border */
+    outline: none;
+}
+
+
+.main2{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(3.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 120vh;
+    margin-top: 156px;
+    background-attachment: fixed;
+}
+
+.about, .contacts {
+    width: 80%;
+    margin: 50px auto;                /* Centered with 50px top/bottom margin */
+    padding: 120px;                    /* Reduced padding for balanced look */
+    background-color: transparent;
+    border-radius: 10px;
+    text-align: center;
+    color: #b48811;
+}
+
+.about h2, .contacts h2 {
+    font-size: 70px;
+    margin-top: 10px;                 /* Reduced top margin for better alignment */
+    margin-bottom: 50px;              /* Adjusted bottom margin */
+    text-transform: uppercase;
+}
+.about p, .contacts p {
+    font-size: 22px;                 /* Set a smaller, readable font size for paragraphs */
+    line-height: 1.6;                /* Improved readability with proper line height */
+    color: #fff;                     /* Maintain consistency with other text or choose a contrasting color */
+    margin-bottom: 20px;             /* Add spacing between paragraphs */
+}   
+.main3 {
+    width: 100%;
+    background: linear-gradient(to top,white 50% );
+    background-position: center;
+    background-size: cover;
+    height: 133vh;
+    background-attachment: fixed;
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;                        /* Space between team members */
+
+}
+
+.team-member {
+    width: 200px;                     /* Slightly wider for better content fit */
+    background-color: darkgoldenrod;
+    color: beige;
+    padding: 10px;                    /* Adjusted padding */
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;              /* Increased space between image and name */
+    border: 3px solid #fff;           /* Slightly thicker border */
+}
+
+.team-member h3 {
+    font-size: 20px;                  /* Slightly larger font size */
+    margin: 20px 0 10px;               /* Adjusted margins */
+}
+
+.team-member p {
+    font-size: 16px;                  /* Slightly larger for readability */
+    opacity: 0.9;
+}
+
+/* Hover Effect */
+.team-member:hover {
+    transform: translateY(-8px);      /* Increased lift on hover */
+}
+
+/* Ensure the body takes up full height */
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Flex container to push footer to the bottom */
+.main {
+    flex: 1; /* Takes up available vertical space */
+}
+
+/* Footer styling */
+.footer {
+    background-color: beige;   /* White background */
+    color: #b48811;           /* Text color */
+    text-align: center;
+    padding: 15px 0;          /* Vertical padding */
+    font-size: 14px;
+    width: 100%;              /* Full width */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+#response {
+    margin-top: 15px;
+    font-size: 16px;
+    text-align: center;
+}
+
+#response.success {
+    color: #b48811; /* Green success */
+}
+
+#response.error {
+    color: #b48811; /* Red error */
+}
+
+
+
+@media screen and (max-width: 480px) {
+    .form-container {
+        width: 90%;
+    }
+
+    form h2 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .main {
+        height: 100vh;
+        background-size: cover;
+    }
+
+    .navbar {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .icon {
+        width: auto;
+    }
+
+    .content {
+        width: 90%;
+        margin-top: 50px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .logo {
+        font-size: 30px;
+        padding-left: 10px;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    ul li {
+        margin: 10px 0;
+        margin-left: 20px;
+    }
+
+
+    .content .h1 {
+        font-size: 50px; 
+    }
+
+    .content span {
+        font-size: 40px; 
+    }
+
+    .icon {
+        gap: 10px;  
+        top: 0; 
+    }
+
+    .icon ion-icon {
+        font-size: 25px; 
+    }
+}
+
+
+@media (max-width: 480px) {
+    .content .h1 {
+        font-size: 40px; 
+    }
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .team-member {
+        width: 80%;
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about h2, .contacts h2 {
+        font-size: 28px;
+    }
+}
+
+
+
+

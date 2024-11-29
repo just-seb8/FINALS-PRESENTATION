@@ -1,0 +1,325 @@
+<!-- <head>
+    <title>Webpage Design</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+body {
+    margin: 0;
+    padding: 0;
+    background: url('coffee_bg.jpg') no-repeat center center fixed;
+    background-size: auto;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-y: auto;
+}
+
+
+
+form {
+    background: rgba(255, 255, 255, 0.9); /* Light background for readability */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: transparent;
+    width: 90%;
+    max-width: 600px;
+    box-sizing: border-box;
+}
+
+h2 {
+    color: #444;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+fieldset {
+    border: 2px solid #f8c8d8; /* Soft pink border */
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fdfdfd;
+}
+
+legend {
+    font-size: 18px;
+    font-weight: bold;
+    color: black; /* Soft pink color */
+    padding: 0 10px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f7f7f7;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: #f8c8d8; /* Pink focus border */
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #f8c8d8;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #e6a3b1; /* Darker pink */
+}
+
+#response {
+    margin-top: 15px;
+    font-size: 16px;
+    text-align: center;
+    color: #4caf50; /* Green for success */
+}
+
+#response.error {
+    color: #f44336; /* Red for errors */
+}
+
+@media (max-width: 600px) {
+    form {
+        padding: 20px;
+    }
+
+    fieldset {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+}
+        
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            text-align: left;
+        }
+        
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 15px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+        }
+        
+        .btnn {
+            background-color: hotpink;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        
+        .btnn:hover {
+            background-color: white;
+            color: hotpink;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">SHA-SELLERS CAFE</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#">CATEGORY</a></li>
+                    <li><a href="#">DRINKS</a></li>
+                    <li><a href="#">FOODS</a></li>
+                    <li><a href="#">CONTACTS</a></li>
+                </ul>
+            </div>
+
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Type to text">
+                <a href="#"> <button class="btn">Search</button></a>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="form-image-container">
+            <div class="form-container">
+                <form id="bookingForm" method="POST">
+                    <h2>Coffee Booking Form</h2>
+                
+                    <!-- Personal Information -->
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        <label for="date">Booking Date:</label>
+                        <input type="date" id="date" name="date" required>
+                    </fieldset>
+                
+                    <!-- Coffee Section -->
+                    <fieldset>
+                        <legend>Coffee Selection</legend>
+                        <label for="coffee_type">Coffee Type:</label>
+                        <select id="coffee_type" name="coffee_type">
+                            <option value="">Select Coffee Type</option>
+                            <option value="Espresso">Espresso</option>
+                            <option value="Latte">Latte</option>
+                            <option value="Cappuccino">Cappuccino</option>
+                            <option value="Mocha">Mocha</option>
+                        </select>
+                        <label for="coffee_quantity">Coffee Quantity:</label>
+                        <input type="number" id="coffee_quantity" name="coffee_quantity" min="0" max="10" required>
+                    </fieldset>
+                
+                    <!-- Milk Tea Section -->
+                    <fieldset>
+                        <legend>Milk Tea Selection</legend>
+                        <label for="milk_tea_type">Milk Tea Type:</label>
+                        <select id="milk_tea_type" name="milk_tea_type">
+                            <option value="">Select Milk Tea Type</option>
+                            <option value="Taro">Taro</option>
+                            <option value="Matcha">Matcha</option>
+                            <option value="Brown Sugar">Brown Sugar</option>
+                        </select>
+                        <label for="milk_tea_quantity">Milk Tea Quantity:</label>
+                        <input type="number" id="milk_tea_quantity" name="milk_tea_quantity" min="0" max="10" required>
+                    </fieldset>
+                
+                    <!-- Snack Section -->
+                    <fieldset>
+                        <legend>Snack Selection</legend>
+                        <label for="snacks_type">Snacks:</label>
+                        <select id="snacks_type" name="snacks_type">
+                            <option value="">Select Snack</option>
+                            <option value="Croissant">Croissant</option>
+                            <option value="Muffin">Muffin</option>
+                            <option value="Cake">Cake</option>
+                            <option value="Sandwich">Sandwich</option>
+                        </select>
+                        <label for="snacks_quantity">Snack Quantity:</label>
+                        <input type="number" id="snacks_quantity" name="snacks_quantity" min="0" max="10" required>
+                    </fieldset>
+                
+                    <!-- Food Section -->
+                    <fieldset>
+                        <legend>Food Selection</legend>
+                        <label for="food_item">Food Item:</label>
+                        <select id="food_item" name="food_item">
+                            <option value="">Select Food Item</option>
+                            <option value="Pizza">Pizza</option>
+                            <option value="Pasta">Pasta</option>
+                            <option value="Burger">Burger</option>
+                        </select>
+                        <label for="food_quantity">Food Quantity:</label>
+                        <input type="number" id="food_quantity" name="food_quantity" min="0" max="10" required>
+                    </fieldset>
+                
+                    <button type="submit" class="btnn">Book Now</button>
+                    <div id="response"></div>
+                </form>
+            </div>
+                
+          <div class="image-container">
+            <img id="itemImage" src="" alt="Selected Item" >
+          
+        </div>
+   <div>
+    
+</div>
+
+
+
+    <script>
+        const imageMap = {
+        "Espresso": "1.jpg",
+        "Latte": "latte.jpg",
+        "Cappuccino": "cappuccino.jpg",
+        "Mocha": "mocha.jpg",
+        "Taro": "taro.jpg",
+        "Matcha": "matcha.jpg",
+        "Brown Sugar": "brownsugar.jpg",
+        "Croissant": "croissant.jpg",
+        "Muffin": "muffin.jpg",
+        "Cake": "cake.jpg",
+        "Sandwich": "sandwich.jpg",
+        "Pizza": "pizza.jpg",
+        "Pasta": "pasta.jpg",
+        "Burger": "burger.jpg"
+    };
+
+    function updateImage() {
+        const coffeeType = document.getElementById('coffee_type').value;
+        const milkTeaType = document.getElementById('milk_tea_type').value;
+        const snackType = document.getElementById('snacks_type').value;
+        const foodItem = document.getElementById('food_item').value;
+
+        const selectedType = coffeeType || milkTeaType || snackType || foodItem;
+        const imagePath = imageMap[selectedType];
+
+        const itemImage = document.getElementById('itemImage');
+        if (imagePath) {
+            itemImage.src = imagePath;
+            itemImage.style.display = 'block';
+        } else {
+            itemImage.style.display = 'none';
+        }
+    }
+
+    // Add event listeners to each selection field
+    document.getElementById('coffee_type').addEventListener('change', updateImage);
+    document.getElementById('milk_tea_type').addEventListener('change', updateImage);
+    document.getElementById('snacks_type').addEventListener('change', updateImage);
+    document.getElementById('food_item').addEventListener('change', updateImage);
+        document.getElementById('bookingForm').addEventListener('submit', function(event) {
+            event.preventDefault();  // Prevent form from submitting the default way
+
+            const formData = new FormData(this);  // Collect form data
+            const responseDiv = document.getElementById('response');
+
+            fetch('Bookingform.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.text())
+            .then(data => {
+                responseDiv.textContent = data;  // Display response from server
+                responseDiv.className = data.includes('success') ? 'success' : 'error';  // Set class based on response
+            })
+            .catch(error => {
+                responseDiv.textContent = 'Error: ' + error;
+                responseDiv.className = 'error';
+            });
+        });
+    </script>
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html> -->
